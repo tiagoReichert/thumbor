@@ -205,7 +205,7 @@ HTTP_LOADER_PROXY_PASSWORD = {{ HTTP_LOADER_PROXY_PASSWORD | default(None) }}
 ## Expiration in seconds for the images in the File Storage. Defaults to one
 ## month
 ## Defaults to: 2592000
-STORAGE_EXPIRATION_SECONDS = {{ STORAGE_EXPIRATION_SECONDS | default(2592000) }}
+STORAGE_EXPIRATION_SECONDS = {{ STORAGE_EXPIRATION_SECONDS | default(1800) }}
 
 ## Indicates whether thumbor should store the signing key for each image in the
 ## file storage. This allows the key to be changed and old images to still be
