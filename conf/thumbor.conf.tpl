@@ -51,7 +51,7 @@ AUTO_WEBP = {{ AUTO_WEBP | default(False) }}
 
 ## Max AGE sent as a header for the image served by thumbor in seconds
 ## Defaults to: 86400
-MAX_AGE = {{ MAX_AGE | default(86400) }}
+MAX_AGE = {{ MAX_AGE | default(120) }}
 
 ## Indicates the Max AGE header in seconds for temporary images (images with
 ## failed smart detection)
