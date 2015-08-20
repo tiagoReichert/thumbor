@@ -8,7 +8,7 @@
   "Volumes" : [
     {
       "HostDirectory" :"/var/app/logs",
-      "ContainerDirectory" :"/log"
+      "ContainerDirectory" :"/logs"
     },
     {
       "HostDirectory" :"/var/app/data",
