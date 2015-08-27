@@ -37,7 +37,7 @@ ALLOWED_SOURCES =  {{ ALLOWED_SOURCES | default([]) }}
 
 ## Quality index used for generated JPEG images
 ## Defaults to: 80
-QUALITY = {{ QUALITY | default(80) }}
+QUALITY = {{ QUALITY | default(90) }}
 
 ## Quality index used for generated WebP images. If not set (None) the same level
 ## of JPEG quality will be used.
