@@ -51,7 +51,7 @@ AUTO_WEBP = {{ AUTO_WEBP | default(False) }}
 
 ## Max AGE sent as a header for the image served by thumbor in seconds
 ## Defaults to: 86400
-MAX_AGE = {{ MAX_AGE | default(120) }}
+MAX_AGE = {{ MAX_AGE | default(300) }}
 
 ## Indicates the Max AGE header in seconds for temporary images (images with
 ## failed smart detection)
@@ -205,7 +205,7 @@ HTTP_LOADER_PROXY_PASSWORD = {{ HTTP_LOADER_PROXY_PASSWORD | default(None) }}
 ## Expiration in seconds for the images in the File Storage. Defaults to one
 ## month
 ## Defaults to: 2592000
-STORAGE_EXPIRATION_SECONDS = {{ STORAGE_EXPIRATION_SECONDS | default(1800) }}
+STORAGE_EXPIRATION_SECONDS = {{ STORAGE_EXPIRATION_SECONDS | default(3600) }}
 
 ## Indicates whether thumbor should store the signing key for each image in the
 ## file storage. This allows the key to be changed and old images to still be
@@ -388,7 +388,7 @@ FILTERS = {{ FILTERS | default(['thumbor.filters.brightness', 'thumbor.filters.c
 
 ## Expiration in seconds of generated images in the result storage
 ## Defaults to: 0
-RESULT_STORAGE_EXPIRATION_SECONDS = {{ RESULT_STORAGE_EXPIRATION_SECONDS | default(0) }}
+RESULT_STORAGE_EXPIRATION_SECONDS = {{ RESULT_STORAGE_EXPIRATION_SECONDS | default(1800) }}
 
 ## Path where the Result storage will store generated images
 ## Defaults to: /tmp/thumbor/result_storage
