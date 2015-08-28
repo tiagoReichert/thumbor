@@ -13,6 +13,10 @@
     {
       "HostDirectory" :"/var/app/data",
       "ContainerDirectory" :"/data"
+    },
+    {
+      "HostDirectory" :"/var/app/nginx-cache",
+      "ContainerDirectory" :"/nginx-cache"
     }
   ]
 }
