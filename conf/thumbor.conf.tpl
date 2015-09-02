@@ -230,7 +230,7 @@ UPLOAD_MAX_SIZE = {{ UPLOAD_MAX_SIZE | default(0) }}
 ## Indicates whether thumbor should enable File uploads
 ## Aliases: ENABLE_ORIGINAL_PHOTO_UPLOAD
 ## Defaults to: False
-UPLOAD_ENABLED = {{ UPLOAD_ENABLED | default(False) }}
+UPLOAD_ENABLED = {{ UPLOAD_ENABLED | default(True) }}
 
 ## The type of storage to store uploaded images with
 ## Aliases: ORIGINAL_PHOTO_STORAGE
@@ -240,12 +240,12 @@ UPLOAD_PHOTO_STORAGE = '{{ UPLOAD_PHOTO_STORAGE | default('thumbor.storages.file
 ## Indicates whether image deletion should be allowed
 ## Aliases: ALLOW_ORIGINAL_PHOTO_DELETION
 ## Defaults to: False
-UPLOAD_DELETE_ALLOWED = {{ UPLOAD_DELETE_ALLOWED | default(False) }}
+UPLOAD_DELETE_ALLOWED = {{ UPLOAD_DELETE_ALLOWED | default(True) }}
 
 ## Indicates whether image overwrite should be allowed
 ## Aliases: ALLOW_ORIGINAL_PHOTO_PUTTING
 ## Defaults to: False
-UPLOAD_PUT_ALLOWED = {{ UPLOAD_PUT_ALLOWED | default(False) }}
+UPLOAD_PUT_ALLOWED = {{ UPLOAD_PUT_ALLOWED | default(True) }}
 
 ## Default filename for image uploaded
 ## Defaults to: image
