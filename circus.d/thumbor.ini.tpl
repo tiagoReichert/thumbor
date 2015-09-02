@@ -1,7 +1,7 @@
 [watcher:thumbor]
 cmd = thumbor
 args = --conf=/code/thumbor.conf --fd $(circus.sockets.thumbor)
-numprocesses = 24
+numprocesses = 36
 use_sockets = True
 uid = thumbor
 gid = thumbor
