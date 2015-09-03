@@ -1,4 +1,4 @@
-FROM apsl/thumbor
+FROM ribeirofelix/thumbor
 
 COPY circus.d/nginx.ini.tpl /etc/circus.d/
 COPY setup.d/nginx /etc/setup.d/30-nginx
