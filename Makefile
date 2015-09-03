@@ -1,5 +1,5 @@
 all: thumbor
-	sudo docker run -p 80:80 -v /data:/data -v /logs:/logs -v /nginx-cache:/nginx-cache  vtexlab/thumbor > out.log 2>&1 & 
+	sudo docker run -p 80:80 -v /data:/data -v /logs:/logs -v /nginx-cache:/nginx-cache -v /nginx-cache-thumbor:/nginx-cache-thumbor  vtexlab/thumbor > out.log 2>&1 & 
 thumbor: .
 	sudo docker build -t vtexlab/thumbor .
 clean:
