@@ -17,6 +17,10 @@
     {
       "HostDirectory" :"/var/app/nginx-cache",
       "ContainerDirectory" :"/nginx-cache"
+    },
+    {
+      "HostDirectory" :"/var/app/nginx-cache-thumbor",
+      "ContainerDirectory" :"/nginx-cache-thumbor"
     }
   ]
 }
