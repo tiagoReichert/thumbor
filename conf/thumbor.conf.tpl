@@ -205,7 +205,7 @@ HTTP_LOADER_PROXY_PASSWORD = {{ HTTP_LOADER_PROXY_PASSWORD | default(None) }}
 ## Expiration in seconds for the images in the File Storage. Defaults to one
 ## month
 ## Defaults to: 2592000
-STORAGE_EXPIRATION_SECONDS = {{ STORAGE_EXPIRATION_SECONDS | default(3600) }}
+STORAGE_EXPIRATION_SECONDS = {{ STORAGE_EXPIRATION_SECONDS | default(1800) }}
 
 ## Indicates whether thumbor should store the signing key for each image in the
 ## file storage. This allows the key to be changed and old images to still be
@@ -388,7 +388,7 @@ FILTERS = {{ FILTERS | default(['thumbor.filters.brightness', 'thumbor.filters.c
 
 ## Expiration in seconds of generated images in the result storage
 ## Defaults to: 0
-RESULT_STORAGE_EXPIRATION_SECONDS = {{ RESULT_STORAGE_EXPIRATION_SECONDS | default(1800) }}
+RESULT_STORAGE_EXPIRATION_SECONDS = {{ RESULT_STORAGE_EXPIRATION_SECONDS | default(0) }}
 
 ## Path where the Result storage will store generated images
 ## Defaults to: /tmp/thumbor/result_storage
