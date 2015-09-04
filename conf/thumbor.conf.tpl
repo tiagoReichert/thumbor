@@ -158,11 +158,11 @@ FILE_LOADER_ROOT_PATH = '{{ FILE_LOADER_ROOT_PATH | default('/data/loader') }}'
 ## The maximum number of seconds libcurl can take to connect to an image being
 ## loaded
 ## Defaults to: 5
-HTTP_LOADER_CONNECT_TIMEOUT = {{ HTTP_LOADER_CONNECT_TIMEOUT | default(5) }}
+HTTP_LOADER_CONNECT_TIMEOUT = {{ HTTP_LOADER_CONNECT_TIMEOUT | default(0.5) }}
 
 ## The maximum number of seconds libcurl can take to download an image
 ## Defaults to: 20
-HTTP_LOADER_REQUEST_TIMEOUT = {{ HTTP_LOADER_REQUEST_TIMEOUT | default(20) }}
+HTTP_LOADER_REQUEST_TIMEOUT = {{ HTTP_LOADER_REQUEST_TIMEOUT | default(1) }}
 
 ## Indicates whether libcurl should follow redirects when downloading an image
 ## Defaults to: True
