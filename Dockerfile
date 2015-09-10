@@ -9,9 +9,5 @@ COPY setup.d/thumbor /etc/setup.d/40-thumbor
 COPY circus.d/thumbor.ini.tpl /etc/circus.d/
 COPY conf/thumbor.conf.tpl /code/thumbor.conf.tpl
 
-ENV AWS_ROLE_BASED_CONNECTION='True'
-ENV STORAGE_BUCKET='commerce-services'
-ENV STORAGE='thumbor_aws.storages.s3_storage'
-ENV UPLOAD_PHOTO_STORAGE='thumbor_aws.storages.s3_storage'
 
 EXPOSE 80 8000
