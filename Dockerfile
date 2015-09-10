@@ -9,5 +9,7 @@ COPY setup.d/thumbor /etc/setup.d/40-thumbor
 COPY circus.d/thumbor.ini.tpl /etc/circus.d/
 COPY conf/thumbor.conf.tpl /code/thumbor.conf.tpl
 
+COPY extensions/http_revalidating_loader.py /code/env/lib/python2.7/site-packages/thumbor/loaders/
+ENV LOADER='thumbor.loaders.http_revalidating_loader'
 
 EXPOSE 80 8000
