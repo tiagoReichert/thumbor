@@ -15,4 +15,8 @@ ENV LOADER='thumbor.loaders.http_revalidating_loader'
 ENV CIRCUS_HTTPD=true
 ENV CIRCUS_STATSD=true
 
+ENV STORAGE_BUCKET=vtex-catalog
+ENV UPLOAD_PHOTO_STORAGE=thumbor_aws.storages.s3_storage
+ENV STORAGE=thumbor_aws.storages.s3_storage
+
 EXPOSE 80 8000
