@@ -10,7 +10,7 @@ COPY circus.d/thumbor.ini.tpl /etc/circus.d/
 COPY conf/thumbor.conf.tpl /code/thumbor.conf.tpl
 
 COPY extensions/http_revalidating_loader.py /code/env/lib/python2.7/site-packages/thumbor/loaders/
-ENV LOADER='thumbor.loaders.http_revalidating_loader'
+# ENV LOADER='thumbor.loaders.http_revalidating_loader'
 
 ENV CIRCUS_HTTPD=true
 ENV CIRCUS_STATSD=true
